@@ -1,0 +1,6 @@
+frontend/node_modules/*
+*.exe
+packrd/*
+*.syso
+
+*packr.go

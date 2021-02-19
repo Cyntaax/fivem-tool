@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - GOOS=windows
+      - GOARCH=amd64
+    volumes:
+      - ./output:/usr/app/src/backend/dist
