@@ -9,7 +9,7 @@ import (
 
 func main() {
 	box := packr.New("site", "../frontend/dist")
-	fmt.Println("hello!")
+	fmt.Println("hello!2")
 	http.Handle("/", http.FileServer(box))
 
 	http.ListenAndServe(":3030", nil)
